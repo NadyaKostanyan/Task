@@ -1,0 +1,184 @@
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.navBarCol {
+    background-color: #FFF;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 1%;
+}
+
+.navbar-toggler {
+    border: 0 solid;
+}
+
+.navbar-light, .navbar-nav, .nav-link {
+    color: #272727 !important;
+    font-weight: 500;
+}
+
+.navSpace {
+    margin-left: 55px;
+}
+
+.bgImgSize {
+    width: 100%;
+}
+
+.centeredDescription {
+    position: absolute;
+    top: 61%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.imgTitle {
+    color: #FFF;
+    text-align: center;
+}
+
+.btnImg {
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fc5f45;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.features {
+    margin-top: 16%;
+    display: flex;
+    text-align: center;
+}
+
+/*.featuresImage {*/
+/*    padding-left: 40%;*/
+/*}*/
+
+/*.featureOne {*/
+/*    width: 40%;*/
+/*    border: 1px solid;*/
+/*}*/
+
+/*.featureTwo {*/
+/*    width: 30%;*/
+/*    border: 1px solid;*/
+/*}*/
+
+/*.featureThree {*/
+/*    width: 50%;*/
+/*    border: 1px solid;*/
+/*}*/
+
+.featureTitle1 {
+    color: #38c695;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.featureTitle2 {
+    color: #9172b3;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.featureTitle3 {
+    color: #feb960;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.aboutImgNumber {
+    position: relative;
+}
+
+.aboutTitle {
+    position: absolute;
+    top: 88px;
+}
+
+.aboutDescription {
+    color: #6b6b6b;
+    font-weight: 400;
+}
+
+.focusCol {
+    background-color: #f7f7f7;
+}
+
+.focusTitle {
+    padding-top: 5%;
+}
+
+.focusDescription {
+    padding-bottom: 3%;
+}
+
+/*.focusNumber {*/
+
+/*}*/
+
+.card {
+    border-radius: 0;
+    border: none;
+    box-shadow: 5px 5px 5px #f1f1f1;
+}
+
+.card-text {
+    padding-top: 12%;
+}
+
+.card-textTwo {
+    padding-top: 9%;
+}
+
+.card-descriptionWeb {
+    margin-top: 40px;
+}
+
+.card-descriptionUX, .card-descriptionApp {
+    margin-top: 38px;
+}
+
+.card-descriptionPhoto {
+    margin-top: 37px;
+}
+
+.cardIcons {
+    padding-top: 20%;
+}
+
+.cardWeb {
+    border-bottom: 5px solid #fc5f45;
+}
+
+.cardUX {
+    border-bottom: 5px solid #38c695;
+}
+
+.cardPhoto {
+    border-bottom: 5px solid #b27cf5;
+}
+
+.cardApp {
+    border-bottom: 5px solid #feb960;
+}
