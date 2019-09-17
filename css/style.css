@@ -1,3 +1,9 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
 .container-fluid {
     width: 100%;
     padding-right: 0;
@@ -12,7 +18,6 @@
 
 .navbar {
     width: 100%;
-    margin: auto;
     padding: 1%;
 }
 
@@ -25,25 +30,31 @@
     font-weight: 500;
 }
 
-.navSpace {
-    margin-left: 55px;
+.colPadding {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.bgImgSize {
+.bg-img {
     width: 100%;
+    background: url("./../img/bgImage.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.bg-img h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
 }
 
 .centeredDescription {
-    position: absolute;
-    top: 61%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .imgTitle {
     color: #FFF;
-    text-align: center;
 }
 
 .btnImg {
@@ -53,7 +64,6 @@
     border-radius: 30px;
     background-color: #fc5f45;
     color: white;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -62,29 +72,18 @@
 }
 
 .features {
-    margin-top: 16%;
+    width: 55%;
+    color: #333333;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-around;
     display: flex;
-    text-align: center;
+    float: none;
 }
 
-/*.featuresImage {*/
-/*    padding-left: 40%;*/
-/*}*/
-
-/*.featureOne {*/
-/*    width: 40%;*/
-/*    border: 1px solid;*/
-/*}*/
-
-/*.featureTwo {*/
-/*    width: 30%;*/
-/*    border: 1px solid;*/
-/*}*/
-
-/*.featureThree {*/
-/*    width: 50%;*/
-/*    border: 1px solid;*/
-/*}*/
 
 .featureTitle1 {
     color: #38c695;
@@ -107,35 +106,101 @@
     padding-top: 15px;
 }
 
+.aboutImg {
+    width: 100%;
+}
+
+/*.bgImgAbout {*/
+/*    width: 50%;*/
+/*    background: url("./../img/aboutImg.png") no-repeat center;*/
+/*    background-size: cover;*/
+/*    height: 100%;*/
+/*}*/
+
+.aboutCol {
+    width: 100%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
 .aboutImgNumber {
     position: relative;
+    width: 40%;
+    padding: 1%;
 }
 
 .aboutTitle {
     position: absolute;
     top: 88px;
+    left: 20%;
+    font-family: 'Libre Baskerville', serif;
+    color: #313131;
+    font-weight: bold;
 }
 
 .aboutDescription {
     color: #6b6b6b;
     font-weight: 400;
+    padding-left: 11%;
+    padding-right: 8%;
+    padding-bottom: 20%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.colAboutSecond {
+    position: absolute;
+    left: 40%;
+    top: 15%;
 }
 
 .focusCol {
     background-color: #f7f7f7;
+    margin-bottom: 15%;
 }
 
-.focusTitle {
-    padding-top: 5%;
+.focusTitle, .pricingTableTitile {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 24%;
+    left: 0;
+    right: 0;
 }
 
-.focusDescription {
+.workStepsTitle {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 11%;
+    left: 0;
+    right: 0;
+}
+
+.teamTitle {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+}
+
+.pricingTableTitile {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 17%;
+    left: 0;
+    right: 0;
+}
+
+.focusDescription, .teamDescription, .pricingTableDescription, .workStepsDescription {
     padding-bottom: 3%;
+    padding-top: 1%;
 }
-
-/*.focusNumber {*/
-
-/*}*/
 
 .card {
     border-radius: 0;
@@ -167,18 +232,516 @@
     padding-top: 20%;
 }
 
-.cardWeb {
+.cardWeb, .cardMember1 {
     border-bottom: 5px solid #fc5f45;
 }
 
-.cardUX {
+.cardUX, .cardMember2 {
     border-bottom: 5px solid #38c695;
 }
 
-.cardPhoto {
+.cardPhoto, .cardMember3 {
     border-bottom: 5px solid #b27cf5;
 }
 
-.cardApp {
+.cardApp, .cardMember4 {
     border-bottom: 5px solid #feb960;
 }
+
+.centeredDescriptionVideo {
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.bgImgVideo {
+    width: 100%;
+    background: url("./../img/bgVideoImg.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.videoTitle {
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    line-height: 2.667;
+}
+
+.clickVideo {
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    line-height: 5.333;
+}
+
+.imagesCard {
+    width: 100%;
+}
+
+.teamCol {
+    background-color: #f7f7f7;
+}
+
+.teamMembersName1 {
+    color: #fc5f45;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 3%;
+}
+
+.teamMembersName2 {
+    color: #38c695;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 3%;
+}
+
+.teamMembersName3 {
+    color: #b27cf5;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 3%;
+}
+
+.teamMembersName4 {
+    color: #feb960;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 3%;
+}
+
+.teamMembersProf {
+    color: #616161;
+    font-family: 'Poppins', sans-serif;
+}
+
+.membersDescription {
+    background-color: #FFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.membersDesTitle {
+    color: #272727;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 5%;
+    padding-left: 7%;
+    font-weight: bold;
+}
+
+.descriptionAbout {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: 'Poppins', sans-serif;
+    color: #616161;
+}
+
+.aboutBennet {
+    top: 50%;
+    position: absolute;
+    left: 10%;
+    right: 20%;
+}
+
+.hrStyle {
+    background-color: rgb(239, 239, 239);
+    position: absolute;
+    top: 9%;
+    width: 2px;
+    height: 151px;
+    z-index: 447;
+    left: 65%;
+    right: 60%;
+}
+
+.fb, .twitter, .linkedIn, .insta {
+    color: #616161;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bgImgStats {
+    width: 100%;
+    background: url("./../img/bgStats.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.imgStats {
+    margin-top: 20%;
+}
+
+.imgStatsPoint {
+    margin-bottom: 20%;
+}
+
+.statsPoint {
+    font-family: 'Poppins', sans-serif;
+    color: #fefefe;
+    line-height: 4;
+}
+
+.statsDescription {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(254, 254, 254, 0.702);
+    line-height: 1;
+}
+
+.workStepsFirstCol {
+    background-color: #FFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+    border-bottom: 5px solid #fc5f45;
+    position: relative;
+    left: 10%;
+    right: 50%;
+    top: 40px;
+}
+
+.workStepsSecondCol {
+    background-color: #FFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+    border-bottom: 5px solid #38c695;
+    left: 27%;
+    right: 50%;
+    top: 33px;
+}
+
+.workSecondStepsColImg {
+    position: absolute;
+    left: 33%;
+    right: 35%;
+    top: 15%;
+    z-index: -999;
+}
+
+.workStepsThirdCol {
+    position: relative;
+    left: 32.6%;
+    right: 70%;
+    top: 104px;
+}
+
+
+.workFirstTitle {
+    color: #272727;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 11%;
+    font-weight: 500
+}
+
+.workDescription {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    padding-left: 25%;
+    padding-right: 15%;
+    padding-bottom: 10%;
+    height: 140px;
+}
+
+.workCOl {
+    background-color: #FFF;
+    left: 10%;
+    z-index: 999;
+    position: absolute;
+    top: 23px;
+    border-bottom: 5px solid #b27cf5;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.workStepsThirdColImg {
+    top: 90px;
+    left: 32.6%;
+    position: relative;
+}
+
+.workStep4 {
+    background-color: #FFF;
+    top: 35px;
+    left: 27%;
+    right: 20%;
+    border-bottom: 5px solid #feb960;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.workStepImg4 {
+    position: relative;
+    top: 90px;
+    left: 32.6%;
+    right: 30%;
+}
+
+
+.workImg {
+    width: 100%;
+}
+
+.workNumbers {
+    padding: 6%;
+}
+
+.hrStyle2 {
+    background-color: #e0e0e0;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    width: 84px;
+    transform: rotate(-45deg);
+}
+
+.pricing .cardFirst {
+    border: none;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #38c695;
+}
+
+.pricing .cardSecond {
+    border: none;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #fc5f45;
+}
+
+.pricing .cardThird {
+    border: none;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #b27cf5;
+}
+
+.pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.pricing .card-price {
+    /*margin: 0;*/
+}
+
+.period {
+    font-size: 15px;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 16px;
+}
+
+.pricing ul li {
+    margin-bottom: 1rem;
+}
+
+.mainPrice {
+    border: 3px solid #38c695;
+    border-radius: 50%;
+    width: 107px;
+    height: 105px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.price {
+    background: #38c695;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+}
+
+.mainPrice2 {
+    border: 3px solid #fc5f45;;
+    border-radius: 50%;
+    width: 107px;
+    height: 105px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.price2 {
+    background: #fc5f45;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+}
+
+.mainPrice3 {
+    border: 3px solid #b27cf5;
+    border-radius: 50%;
+    width: 107px;
+    height: 105px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.price3 {
+    background: #b27cf5;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+}
+
+.pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.btn-outline-primary {
+    border: 1px solid #38c695;
+    color: #38c695;
+}
+
+.btn-outline-primary:hover {
+    background-color: #38c695;
+    border: 1px solid #38c695;
+    color: #FFF;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #fc5f45;
+    color: #fc5f45;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #fc5f45;
+    border: 1px solid #fc5f45;
+    color: #FFF;
+}
+
+.btn-outline-success {
+    border: 1px solid #b27cf5;
+    color: #b27cf5;
+}
+
+.btn-outline-success:hover {
+    background-color: #b27cf5;
+    border: 1px solid #b27cf5;
+    color: #FFF;
+}
+
+.priceCol {
+    color: #FFF;
+    font-size: 130%;
+
+    position: relative;
+    top: 20px;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
+}
+
+/* Media query */
+
+@media only screen and (max-width: 682px) {
+    .imgTitle {
+        font-size: 30%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .features {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .features {
+        width: 78%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .features {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .features {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .teamDescription {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .aboutDescription {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .aboutTitle {
+        font-size: 30px;
+        top: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutTitle {
+        font-size: 25px;
+        top: 20%;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .focusTitle {
+        font-size: 50px;
+        top: 15%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .focusTitle {
+        font-size: 50px;
+        top: 9%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .aboutCol {
+        height: 230px;
+    }
+}
+

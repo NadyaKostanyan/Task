@@ -3,17 +3,22 @@
 <head>
     <title>Task</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
 <div class="container-fluid">
+
+    <!-- Navbar   -->
     <div class="col-12 navBarCol">
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light colPadding m-auto ">
                 <img src="./img/AlexisLogo.png"> <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -22,7 +27,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav navSpace">
+                    <ul class="navbar-nav  ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
@@ -45,116 +50,425 @@
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"></a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
+    <!--   End Navbar -->
+
+    <!-- Our First Col Design   -->
     <div class="col-12">
         <div class="row">
-            <img src="./img/bgImage.png" class="bgImgSize">
-            <div class="centeredDescription">
-                <h1 class="imgTitle">We design things with love <br> and passion.</h1>
-                <button class="btnImg"> Our Works</button>
-                <div class="features">
+            <div class="bg-img">
+                <div class="centeredDescription text-center">
+                    <h1 class="imgTitle text-center">We design things with love <br> and passion.</h1>
+                    <button class="btnImg mt-5 text-center"> Our Works</button>
+                    <div class="features mt-5">
+                        <div>
+                            <img src="./img/featureOneIcon.png">
+                            <p class="featureTitle1">Fixed price projects</p>
+                        </div>
 
-                    <div class="featureOne">
-                        <img src="./img/featureOneIcon.png" class="featuresImage">
-                        <p class="featureTitle1">Fixed price projects</p>
-                    </div>
+                        <div>
+                            <img src="./img/featureTwoIcon.png">
+                            <p class=" featureTitle2">Receive on time</p>
+                        </div>
 
-                    <div class="featureTwo">
-                        <img src="./img/featureTwoIcon.png" class="featuresImage">
-                        <p class=" featureTitle2">Receive on time</p>
-                    </div>
-
-                    <div class="featureThree">
-                        <img src="./img/featureThreeIcon.png" class="featuresImage">
-                        <p class=" featureTitle3">Satisfaction guranteed</p>
+                        <div>
+                            <img src="./img/featureThreeIcon.png">
+                            <p class=" featureTitle3">Satisfaction guranteed</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- End Our First Col Design -->
+
+    <!-- About Col -->
     <div class="col-12">
         <div class="row">
-            <div class="col-6">
-                <img src="./img/aboutImg.png">
+            <div class="col-6 pr-0 pl-0">
+                <img src="./img/aboutImg.png" class="aboutImg">
             </div>
-            <div class="col-6">
-                <img src="./img/01.png" class="aboutImgNumber">
-                <h1 class="aboutTitle">About Us.</h1>
-                <p class="aboutDescription">Analytics release series A financing launch party interaction design android
-                    angel investor. Vesting
-                    period social media sales conversion launch party rockstar incubator customer social proof graphical
-                    user interface technology supply chain. Non-disclosure agreement rockstar creative partner network
-                    launch party social proof paradigm shift long tail influencer.
-                    <br>
-                    Monetization validation success. Seed round channels product
-                    management. Customer non-disclosure agreement strategy
-                    android growth hacking ramen buyer.</p>
+            <div class="col-6 bg-white colAboutSecond pr-0 pl-0">
+                <div class="aboutCol">
+                    <img src="./img/01.png" class="aboutImgNumber">
+                    <h1 class="aboutTitle">About Us.</h1>
+                    <p class="aboutDescription">Analytics release series A financing launch party interaction design
+                        android
+                        angel investor. Vesting
+                        period social media sales conversion launch party rockstar incubator customer social proof
+                        graphical
+                        user interface technology supply chain. Non-disclosure agreement rockstar creative partner
+                        network
+                        launch party social proof paradigm shift long tail influencer.
+                        <br>
+                        <br>
+                        Monetization validation success. Seed round channels product
+                        management. Customer non-disclosure agreement strategy
+                        android growth hacking ramen buyer.</p>
+                </div>
             </div>
         </div>
     </div>
+    <!-- End About Col -->
+
+    <!-- Focus Col -->
     <div class="col-12 focusCol text-center">
-        <img src="./img/02.png" class="focusNumber">
+        <img src="./img/02.png">
         <h1 class="focusTitle">Our Focus.</h1>
         <p class="focusDescription">We understand your requirement and provide quality works.</p>
-        <div class="row">
-                <div class="col-3 col-sm-6 col-md-6 col-lg-3">
-                    <div class="card bg-white">
-                        <div class="card-body text-center cardWeb">
-                            <img src="./img/webDesignIcon.png" class="cardIcons">
-                            <h5 class="card-text">Web Design</h5>
-                            <p class="card-descriptionWeb">Analytics release series A financing launch party
-                                interaction design android angel investor. </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-3 col-sm-6 col-md-6 col-lg-3">
-                    <div class="card bg-white">
-                        <div class="card-body text-center cardUX">
-                            <img src="./img/uxDesignIcon.png" class="cardIcons">
-                            <h5 class="card-textTwo">UX Design</h5>
-                            <p class="card-descriptionUX">Analytics release series A financing launch party
-                                interaction design android angel investor.</p>
-                        </div>
+        <div class="row pl-0 pr-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 pl-5 pr-5">
+                <div class="card bg-white">
+                    <div class="card-body text-center cardWeb">
+                        <img src="./img/webDesignIcon.png" class="cardIcons">
+                        <h5 class="card-text">Web Design</h5>
+                        <p class="card-descriptionWeb">Analytics release series A financing launch party
+                            interaction design android angel investor. </p>
                     </div>
                 </div>
-                <div class="col-3 col-sm-6 col-md-6 col-lg-3">
-                    <div class="card bg-white">
-                        <div class="card-body text-center cardPhoto">
-                            <img src="./img/photographyIcon.png" class="cardIcons">
-                            <h5 class="card-text">Photogrpahy</h5>
-                            <p class="card-descriptionPhoto">Analytics release series A financing launch party
-                                interaction design android angel investor.</p>
-                        </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 pl-5 pr-5">
+                <div class="card bg-white">
+                    <div class="card-body text-center cardUX">
+                        <img src="./img/uxDesignIcon.png" class="cardIcons">
+                        <h5 class="card-textTwo">UX Design</h5>
+                        <p class="card-descriptionUX">Analytics release series A financing launch party
+                            interaction design android angel investor.</p>
                     </div>
                 </div>
-                <div class="col-3 col-sm-6 col-md-6 col-lg-3">
-                    <div class="card bg-white">
-                        <div class="card-body text-center cardApp">
-                            <img src="./img/appIcon.png" class="cardIcons">
-                            <h5 class="card-text">App Development</h5>
-                            <p class="card-descriptionApp">Analytics release series A financing launch party
-                                interaction design android angel investor.</p>
-                        </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 pl-5 pr-5">
+                <div class="card bg-white">
+                    <div class="card-body text-center cardPhoto">
+                        <img src="./img/photographyIcon.png" class="cardIcons">
+                        <h5 class="card-text">Photogrpahy</h5>
+                        <p class="card-descriptionPhoto">Analytics release series A financing launch party
+                            interaction design android angel investor.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 pl-5 pr-5">
+                <div class="card bg-white">
+                    <div class="card-body text-center cardApp">
+                        <img src="./img/appIcon.png" class="cardIcons">
+                        <h5 class="card-text">App Development</h5>
+                        <p class="card-descriptionApp">Analytics release series A financing launch party
+                            interaction design android angel investor.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    <!-- End Focus Col-->
+
+    <!-- Video Col   -->
+    <div class="col-12  text-center">
+        <div class="row">
+            <div class="bgImgVideo">
+                <div class="centeredDescriptionVideo text-center">
+                    <h1 class="videoTitle">Explore Our Awesomeness</h1>
+                    <button type="button" class="btn btn-link">
+                        <img src="./img/videoIcon.png">
+                    </button>
+                    <p class="clickVideo">Click to play the video</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Video Col-->
+    <!--    TODO Portfolio Page-->
+
+
+    <!--Team Col-->
+    <div class="col-12 teamCol text-center">
+        <img src="./img/04.png">
+        <h1 class="teamTitle">Our Team.</h1>
+        <p class="teamDescription">We understand your requirement and provide quality works.</p>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                <div class="card bg-white">
+                    <div class="card-body p-0 text-center cardMember1">
+                        <img src="./img/team1.png" class="imagesCard">
+                        <h5 class="teamMembersName1">Michael Schmitt</h5>
+                        <p class="teamMembersProf">Founder & CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="card bg-white">
+                    <div class="card-body  p-0 text-center cardMember2">
+                        <img src="./img/team2.png" class="imagesCard">
+                        <h5 class="teamMembersName2">David Krämer</h5>
+                        <p class="teamMembersProf">Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="card bg-white">
+                    <div class="card-body  p-0 text-center cardMember3">
+                        <img src="./img/team3.png" class="imagesCard">
+                        <h5 class="teamMembersName3">Anna Schröder</h5>
+                        <p class="teamMembersProf">Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="card bg-white">
+                    <div class="card-body p-0 text-center cardMember4">
+                        <img src="./img/team4.png" class="imagesCard">
+                        <h5 class="teamMembersName4">Jason Teichmann</h5>
+                        <p class="teamMembersProf">Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 pl-0 pr-0">
+            <div class="membersDescription  mt-5 row">
+                <div class="col-8 text-left">
+                    <h5 class="membersDesTitle text-left">About Bennet.</h5>
+                    <p class="descriptionAbout pt-3">Monetization first mover advantage iPad. Interaction design
+                        buzz handshake. Stealth
+                        agile development
+                        branding. Backing facebook hackathon conversion startup scrum project niche market
+                        business-to-consumer
+                        paradigm shift traction. Rockstar
+                        bandwidth twitter ownership success disruptive series A financing user experience buyer
+                        client social
+                        proof validation hypotheses. User experience crowdfunding
+                        facebook seed round A/B testing mass market. </p>
+                </div>
+                <div class="col-1">
+                    <img src="./img/linksIcon.png" class="aboutBennet">
+                    <hr class="hrStyle">
+                </div>
+                <div class="col-3 text-left mt-5">
+                    <img src="./img/socialiconFB.png">
+                    <a href="https://www.facebook.com/"><span class="fb">Facebook</span></a>
+                    <br>
+                    <img src="./img/socialiconTwitter.png">
+                    <a href="https://twitter.com/"> <span class="twitter">Twitter</span></a>
+                    <br>
+                    <img src="./img/socialiconLinkedIn.png">
+                    <a href="https://www.linkedin.com/"><span class="linkedIn">LinkedIn</span></a>
+                    <br>
+                    <img src="./img/socialiconInsta.png">
+                    <a href="https://www.instagram.com/?hl=ru"> <span class="insta">Instagram</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    End Team Col-->
+
+
+    <!--    Point Col-->
+    <div class="col-12 text-center">
+        <div class="row">
+            <div class="bgImgStats row">
+                <div class="col-3">
+                    <img src="./img/statsIcon1.png" class="imgStats">
+                    <p class="statsPoint">12,458+</p>
+                    <p class="statsDescription">Projects Completed</p>
+                    <img src="./img/statsS1.png" class="imgStatsPoint">
+                </div>
+                <div class="col-3">
+                    <img src="./img/statsIcon2.png" class="imgStats">
+                    <p class="statsPoint">1,796+</p>
+                    <p class="statsDescription">Satisfied Clients</p>
+                    <img src="./img/statsS2.png" class="imgStatsPoint">
+                </div>
+                <div class="col-3">
+                    <img src="./img/statsIcon3.png" class="imgStats">
+                    <p class="statsPoint">1,000+</p>
+                    <p class="statsDescription">Positive Feedbacks</p>
+                    <img src="./img/statsS3.png" class="imgStatsPoint">
+                </div>
+                <div class="col-3">
+                    <img src="./img/statsIcon4.png" class="imgStats">
+                    <p class="statsPoint">1,500+</p>
+                    <p class="statsDescription">Freebies Released</p>
+                    <img src="./img/statsS4.png" class="imgStatsPoint">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    End Point Col -->
+
+    <!--    TODO WorkSteps page-->
+
+    <!-- Work Steps Col -->
+    <div class="col-12 text-center">
+        <img src="./img/05.png">
+        <h1 class="workStepsTitle">Work Steps</h1>
+        <p class="workStepsDescription">We understand your requirement and provide quality works.</p>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-4 workStepsFirstCol px-0 row">
+                    <img src="./img/01Step.png" class="workNumbers">
+                    <hr class="hrStyle2">
+                    <h5 class="workFirstTitle"> Project Understanding</h5>
+                    <p class="workDescription text-left">Buyer strategy incubator niche market startup. Entrepreneur non
+                        disclosure agreement MVP traction
+                        beta social media investor
+                        accelerator.</p>
+                </div>
+                <div class="col-4 workSecondStepsColImg px-0">
+                    <img src="./img/workStepsBg1.png" class="workImg">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4 workStepsThirdCol px-0">
+                        <img src="./img/workStepsBg2.png" class="workImg">
+                    </div>
+
+                    <div class="col-4 workStepsSecondCol px-0 row">
+                        <img src="./img/02Step.png" class="workNumbers">
+                        <hr class="hrStyle2">
+                        <h5 class="workFirstTitle">Research & Planning</h5>
+                        <p class="workDescription text-left">Buyer strategy incubator niche market startup. Entrepreneur
+                            non
+                            disclosure agreement MVP traction
+                            beta social media investor
+                            accelerator.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4 workCOl  px-0 row">
+                        <img src="./img/03Step.png" class="workNumbers">
+                        <hr class="hrStyle2">
+                        <h5 class="workFirstTitle">Wireframe & Design</h5>
+                        <p class="workDescription text-left">Buyer strategy incubator niche market startup. Entrepreneur
+                            non
+                            disclosure agreement MVP traction
+                            beta social media investor
+                            accelerator.</p>
+                    </div>
+                    <div class="col-4 workStepsThirdColImg  px-0">
+                        <img src="./img/workStepsBg3.png" class="workImg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4 workStepImg4  px-0">
+                        <img src="./img/workStepsBg4.png" class="workImg">
+                    </div>
+                    <div class="col-4 workStep4  px-0 row">
+                        <img src="./img/04Step.png" class="workNumbers">
+                        <hr class="hrStyle2">
+                        <h5 class="workFirstTitle">Wireframe & Design</h5>
+                        <p class="workDescription text-left">Buyer strategy incubator niche market startup. Entrepreneur
+                            non
+                            disclosure agreement MVP traction
+                            beta social media investor
+                            accelerator.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Work Steps Col-->
+
+    <!-- Pricing Table -->
+    <div class="col-12 text-center" style="margin-top: 10%;">
+        <img src="./img/06.png">
+        <h1 class="pricingTableTitile">Pricing Table.</h1>
+        <p class="pricingTableDescription">We understand your requirement and provide quality works.</p>
+        <section class="pricing py-5  text-center">
+            <div class="row pr-0 pl-0 col-12 ml-0 mr-0">
+                <div class="col-4">
+                    <div class="card mb-5 mb-lg-0 cardFirst">
+                        <div class="card-body">
+                            <h5 class="card-title text-bold  text-center">Starter</h5>
+                            <div class="mainPrice">
+                                <div class="price">
+                                    <span class="card-price text-center priceCol">$125</span>
+                                    <p class="period">Per Month</p>
+                                </div>
+                            </div>
+                            <ul class="fa-ul mt-4">
+                                <li><strong>200GB </strong> Online Storage</li>
+                                <li><strong>20</strong> Files Per Day</li>
+                                <li><strong>2TB</strong> Monthly Bandwidth</li>
+                                <li><i class="fa fa-check"></i><span> Secure Platform</span></li>
+                                <li><i class="fa fa-check"></i><span> 24/7 Customer Support </span></li>
+                                <li><i class="fa fa-check"></i><span>Fast & Reliable</span></li>
+                            </ul>
+                            <a href="javascript:void(0)" class="btn btn-block btn-outline-primary text-uppercase">Get
+                                Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mb-5 mb-lg-0 cardSecond">
+                        <div class="card-body">
+                            <h5 class="card-title text-bold  text-center">Ultimate</h5>
+                            <div class="mainPrice2">
+                                <div class="price2">
+                                    <span class="card-price text-center priceCol">$195</span>
+                                    <p class="period">Per Month </p>
+                                </div>
+                            </div>
+                            <ul class="fa-ul mt-4">
+                                <li><strong>800GB</strong> <span>Online Storage</span></li>
+                                <li><strong>Unlimited</strong><span> Files Per Day</span></li>
+                                <li><strong>10TB </strong>Monthly Bandwidth</li>
+                                <li><i class="fa fa-check"></i><span> Secure Platform </span></li>
+                                <li><i class="fa fa-check"></i><span> 24/7 Customer Support</span></li>
+                                <li><i class="fa fa-check"></i><span> Fast & Reliable </span></li>
+                            </ul>
+                            <a href="javascript:void(0)" class="btn btn-block btn-outline-secondary text-uppercase">Get
+                                Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mb-5 mb-lg-0 cardThird">
+                        <div class="card-body">
+                            <h5 class="card-title text-bold  text-center">Professional</h5>
+                            <div class="mainPrice3">
+                                <div class="price3">
+                                    <span class="card-price text-center priceCol">$145</span>
+                                    <p class="period">Per Month</p>
+                                </div>
+                            </div>
+                            <ul class="fa-ul mt-4">
+                                <li><strong>200GB</strong> <span> Online Storage</span></li>
+                                <li><strong>20</strong><span> Files Per Day</span></li>
+                                <li><strong>2TB </strong>Monthly Bandwidth</li>
+                                <li><i class="fa fa-check"></i><span> Secure Platform </span></li>
+                                <li><i class="fa fa-check"></i><span> 24/7 Customer Support</span></li>
+                                <li><i class="fa fa-check"></i><span> Fast & Reliable </span></li>
+                            </ul>
+                            <a href="javascript:void(0)" class="btn btn-block btn-outline-success text-uppercase">Get
+                                Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--End Pricing Table-->
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-
 <script src="./bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
+
+
+
