@@ -177,6 +177,8 @@ body, html {
     right: 0;
 }
 
+
+
 .teamTitle {
     font-family: 'Libre Baskerville', serif;
     font-size: 50px;
@@ -640,10 +642,18 @@ body, html {
 .priceCol {
     color: #FFF;
     font-size: 130%;
-
     position: relative;
     top: 20px;
+}
 
+.testimonialsTitle{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 11%;
+    left: 0;
+    right: 0;
 }
 
 a {
